@@ -1,0 +1,27 @@
+{
+  "name": "proud-planet",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^3.0.9",
+    "@astrojs/vue": "^4.0.8",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-vue": "^5.0.3",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "astro": "^4.2.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "vue": "^3.4.15"
+  },
+  "devDependencies": {
+    "@vue/babel-plugin-jsx": "^1.2.1"
+  }
+}

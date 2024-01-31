@@ -1,0 +1,26 @@
+---
+import List from "../components/List.vue";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <h1>Lista Vue.js</h1>
+    <List client:visible />
+
+    <div class="box__links">
+      <a href="/">Voltar</a>
+      <a href="/react">Ir para App React.js</a>
+    </div>
+  </main>
+</Layout>
+
+<style is:global>
+  div.box__links {
+    display: flex;
+  }
+
+  div.box__links a {
+    display: block;
+  }
+</style>

@@ -1,0 +1,31 @@
+---
+import Counter from "../components/Counter";
+import List from "../components/List.vue";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <h1>Astro project</h1>
+
+		<div>
+			<Counter client:visible/>
+			<List client:visible/>
+		</div>
+
+    <div class="box__links">
+			<a href="/react">Ir para App React.js</a>
+    	<a href="/vue">Ir para App Vue.js</a>
+		</div>
+  </main>
+</Layout>
+
+<style>
+	.box__links {
+		display: flex;
+	}
+
+	.box__links a {
+		display: block;
+	}
+</style>

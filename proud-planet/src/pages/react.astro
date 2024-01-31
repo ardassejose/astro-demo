@@ -1,0 +1,26 @@
+---
+import Counter from "../components/Counter";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <h1>Counter React</h1>
+    <Counter client:visible />
+
+    <div class="box__links">
+      <a href="/">Voltar</a>
+      <a href="/vue">Ir para App Vue.js</a>
+    </div>
+  </main>
+</Layout>
+
+<style is:global>
+  div.box__links {
+    display: flex;
+  }
+
+  div.box__links a {
+    display: block;
+  }
+</style>
